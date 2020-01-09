@@ -10,6 +10,8 @@ const appIncludes = [
   resolveApp('src'),
   resolveApp('../core/src'),
   resolveApp('../../node_modules/react-native-svg-charts'),
+  resolveApp('../../node_modules/react-native-elements'),
+  resolveApp('../../react-native-vector-icons'),
 ]
 
 module.exports = function override(config, env) {
@@ -22,6 +24,7 @@ module.exports = function override(config, env) {
   config.module.rules[2].oneOf[1].include = appIncludes
   config.module.rules[2].oneOf[1].options.plugins = [
     require.resolve('babel-plugin-react-native-web'),
+    require.resolve('@babel/plugin-proposal-class-properties'),
   ].concat(config.module.rules[2].oneOf[1].options.plugins)
   config.module.rules = config.module.rules.filter(Boolean)
   config.plugins.push(

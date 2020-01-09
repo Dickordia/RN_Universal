@@ -1,7 +1,7 @@
 import React, {ReactChild, useCallback} from 'react'
 
 import {useNavigation} from '@react-navigation/core'
-import {TouchableOpacity} from 'react-native'
+import {TouchableOpacity,Text} from 'react-native'
 
 import {LinkProps} from './models'
 
@@ -17,7 +17,8 @@ const Link = (props: LinkProps) => {
     <TouchableOpacity style={props.style}
                       accessibilityRole="button"
                       onPress={navigate}>
-      {props.children}
+      <Text>{props.text}</Text>
+
     </TouchableOpacity>
   )
 }

@@ -23,10 +23,8 @@ export function Landscape() {
 
     <View style={style.container}>
       <Text style={style.text}>Landscape Native</Text>
-      <Link style={style.buttonContainer}
-            routeName={routesMap.login.root.path}>
-        <Text style={style.buttonText}>LOGOUT</Text>
-      </Link>
+      <Link text='LOGOUT'
+            routeName={routesMap.login.root.path} />
 
       <View style={{flexDirection: aFlexDirection}}>
       <AreaChart

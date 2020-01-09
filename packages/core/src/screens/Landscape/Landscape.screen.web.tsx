@@ -22,8 +22,8 @@ export function Landscape() {
 
 
     <View style={style.container}>
-      <Text style={style.text}>Landscape WEB</Text>
-      <Link style={style.buttonContainer}
+      <Text style={style.text}>Landscape WEBD</Text>
+      <Link text='LOGOUT'
             routeName={routesMap.login.root.path}>
         <Text style={style.buttonText}>LOGOUT</Text>
       </Link>
