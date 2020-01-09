@@ -11,7 +11,8 @@ const appIncludes = [
   resolveApp('../core/src'),
   resolveApp('../../node_modules/react-native-svg-charts'),
   resolveApp('../../node_modules/react-native-elements'),
-  resolveApp('../../react-native-vector-icons'),
+  resolveApp('../../node_modules/react-native-vector-icons'),
+  resolveApp('../../node_modules/react-native-ratings'),
 ]
 
 module.exports = function override(config, env) {

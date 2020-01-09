@@ -16,7 +16,6 @@ import {Link} from '../../components/Link'
 import {routesMap} from '../../utils/router'
 
 import store from '../../redux/store'
-import { CheckBox } from 'react-native-elements'
 
 export class Login extends React.Component<any, any> {
 
@@ -83,10 +82,6 @@ render() {
         </View>
 
         <View style={style.loginContainer}>
-        <CheckBox
-  title='Click Here'
-  checked={true}
-/>
           <TextInput
             style={style.input}
             autoCapitalize="none"
