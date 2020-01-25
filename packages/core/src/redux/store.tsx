@@ -1,8 +1,8 @@
 import {createStore} from 'redux';
 
 const defaultState = {
-  login: 'MyTestLogin',
-  password: 'test123',
+  login: 'sepivtorak',
+  password: 'Portal1!',
   loginSuccess: false,
 };
 

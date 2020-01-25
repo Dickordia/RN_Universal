@@ -11,5 +11,11 @@ declare const routesMap: {
             path: string;
         };
     };
+    about: {
+        root: {
+            name: string;
+            path: string;
+        };
+    };
 };
 export { routesMap };

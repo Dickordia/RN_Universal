@@ -10,12 +10,11 @@ const Link = (props: LinkProps) => {
   const navigation = useNavigation()
 
   const navigate = useCallback(() => {
-    navigation.navigate(routeName)
+
   }, [routeName])
 
   return (
-    <TouchableOpacity style={props.style}
-                      accessibilityRole="button"
+    <TouchableOpacity accessibilityRole="button"
                       onPress={navigate}>
       <Text>{props.text}</Text>
 

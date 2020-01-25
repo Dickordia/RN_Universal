@@ -7,6 +7,8 @@ export default StyleSheet.create({
     backgroundColor: '#2c3e5A',
   },
   buttonContainer: {
+    width: 274,
+    alignItems: 'center',
     backgroundColor: '#6e7f80',
     paddingVertical: 15,
     borderRadius: 8,

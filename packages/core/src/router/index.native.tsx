@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { routesMap } from '../utils/router'
 import { Login as LoginScreen } from '../screens/Login/Login.screen'
 import { Landscape as LandscapeScreen } from '../screens/Landscape/Landscape.screen'
+import { About as AboutScreen } from '../screens/About/About.screen'
 
 const Main = createStackNavigator()
 
@@ -22,6 +23,11 @@ const MainNavigator = () => {
           name={routesMap.landscape.root.path}
           component={LandscapeScreen}
           options={{ title: routesMap.landscape.root.name }}
+        />
+        <Main.Screen
+          name={routesMap.about.root.path}
+          component={AboutScreen}
+          options={{ title: routesMap.about.root.name }}
         />
       </Main.Navigator>
     </NavigationNativeContainer>

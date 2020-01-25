@@ -11,6 +11,10 @@ interface RouteConfigsMap {
     navigator: RouteConfig;
     root: RouteConfig;
   };
+  about: {
+    navigator: RouteConfig;
+    root: RouteConfig;
+  };
 }
 
 const routesMap: RouteConfigsMap;

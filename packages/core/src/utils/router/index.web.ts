@@ -4,6 +4,9 @@ const routesMap = {
   },
   landscape: {
     root: { name: "Landscape", path: "/landscape" },
+  },
+  about: {
+    root: { name: "About", path: "/about" },
   }
 };
 

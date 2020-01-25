@@ -14,7 +14,8 @@
     "ios": "yarn workspace mobile  ios",
     "studio": "yarn workspace mobile studio",
     "xcode": "yarn workspace mobile xcode",
-    "web": "yarn workspace web start"
+    "web": "yarn workspace web start",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "@material-ui/core": "^4.8.3",
@@ -24,9 +25,12 @@
     "@react-navigation/native": "^5.0.0-alpha.14",
     "@react-navigation/stack": "^5.0.0-alpha.48",
     "@types/react-native-svg-charts": "^5.0.3",
+    "gh-pages": "^2.2.0",
+    "react-google-login": "^5.0.7",
     "react-native": "0.61.5",
     "react-native-elements": "^1.2.7",
     "react-native-gesture-handler": "^1.5.3",
+    "react-native-google-drive-api-wrapper": "^1.2.0",
     "react-native-reanimated": "^1.4.0",
     "react-native-safe-area-context": "^0.6.2",
     "react-native-screens": "^2.0.0-alpha.22",
@@ -46,6 +50,7 @@
     "concurrently": "^5.0.2",
     "patch-package": "^6.2.0",
     "react-app-rewired": "^2.1.5",
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.4",
+    "webpack-cli": "^3.3.10"
   }
 }

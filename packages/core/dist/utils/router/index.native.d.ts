@@ -19,5 +19,15 @@ declare const routesMap: {
             path: string;
         };
     };
+    about: {
+        navigator: {
+            name: string;
+            path: string;
+        };
+        root: {
+            name: string;
+            path: string;
+        };
+    };
 };
 export { routesMap };

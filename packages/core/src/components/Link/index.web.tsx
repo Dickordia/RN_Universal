@@ -1,20 +1,33 @@
-import React, { ReactChild } from 'react'
-import Button from '@material-ui/core/Button';
+import React from 'react'
 
-import {Link as DOMLink } from 'react-router-dom'
-import {TouchableOpacity} from 'react-native'
-import { LinkProps } from './models'
+import {LinkProps} from './models'
+import {Button} from '@material-ui/core'
+import {useHistory} from 'react-router-dom'
 
-const Link = (props: LinkProps) => {
-  console.log('STYLE')
-  console.log(props.style)
-  return <Button style={{width: 280}}
-                 variant='contained'
-                 color='primary'
-                 component={DOMLink}
-                 to={props.routeName}>
-          {props.text}
-         </Button>
-}
+export const Link = (props: LinkProps) => {
+  const {push} = useHistory();
+  const {goBack} = useHistory();
 
-export { Link }
+  const handleClick = (props: LinkProps) => {
+    if (props.onPress) {
+      props.onPress( () => {
+        if (props.routeName) {
+          push(props.routeName)}
+        }
+      )
+    } else if (props.routeName) {
+      push(props.routeName)
+    } else {
+      goBack();
+    }
+  };
+
+  return (
+    <Button variant='contained'
+            color='primary'
+            disabled={props.disabled || false}
+            onClick={() => handleClick(props)}>
+      {props.text}
+    </Button>
+  )
+};

@@ -5,6 +5,8 @@ declare const _default: {
         backgroundColor: string;
     };
     buttonContainer: {
+        width: number;
+        alignItems: "center";
         backgroundColor: string;
         paddingVertical: number;
         borderRadius: number;

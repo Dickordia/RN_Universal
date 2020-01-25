@@ -8,6 +8,8 @@ import {routesMap} from '../../utils/router'
 import { AreaChart, BarChart, Grid } from 'react-native-svg-charts'
 import * as shape from 'd3-shape'
 
+
+
 export function Landscape() {
   const isWEB = Platform.OS === 'web'
   const aFlexDirection = isWEB ? 'row' : 'column'
@@ -23,8 +25,7 @@ export function Landscape() {
 
     <View style={style.container}>
       <Text style={style.text}>Landscape Native</Text>
-      <Link text='LOGOUT'
-            routeName={routesMap.login.root.path} />
+      <Link text='LOGOUT'/>
 
       <View style={{flexDirection: aFlexDirection}}>
       <AreaChart
