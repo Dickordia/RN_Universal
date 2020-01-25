@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/RN_Universal/static/js/main.93dd93c4.chunk.js",
-    "main.js.map": "/RN_Universal/static/js/main.93dd93c4.chunk.js.map",
+    "main.js": "/RN_Universal/static/js/main.f318b4f2.chunk.js",
+    "main.js.map": "/RN_Universal/static/js/main.f318b4f2.chunk.js.map",
     "runtime-main.js": "/RN_Universal/static/js/runtime-main.d84b2eff.js",
     "runtime-main.js.map": "/RN_Universal/static/js/runtime-main.d84b2eff.js.map",
-    "static/js/2.372b0dae.chunk.js": "/RN_Universal/static/js/2.372b0dae.chunk.js",
-    "static/js/2.372b0dae.chunk.js.map": "/RN_Universal/static/js/2.372b0dae.chunk.js.map",
+    "static/js/2.dca2b0db.chunk.js": "/RN_Universal/static/js/2.dca2b0db.chunk.js",
+    "static/js/2.dca2b0db.chunk.js.map": "/RN_Universal/static/js/2.dca2b0db.chunk.js.map",
     "index.html": "/RN_Universal/index.html",
-    "precache-manifest.fc3debd230cf0f653374605d404716c2.js": "/RN_Universal/precache-manifest.fc3debd230cf0f653374605d404716c2.js",
+    "precache-manifest.38b43c853f3023438be00707a85ffdc7.js": "/RN_Universal/precache-manifest.38b43c853f3023438be00707a85ffdc7.js",
     "service-worker.js": "/RN_Universal/service-worker.js",
-    "static/js/2.372b0dae.chunk.js.LICENSE": "/RN_Universal/static/js/2.372b0dae.chunk.js.LICENSE",
+    "static/js/2.dca2b0db.chunk.js.LICENSE": "/RN_Universal/static/js/2.dca2b0db.chunk.js.LICENSE",
     "static/media/login_logo.png": "/RN_Universal/static/media/login_logo.abe0e6fe.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d84b2eff.js",
-    "static/js/2.372b0dae.chunk.js",
-    "static/js/main.93dd93c4.chunk.js"
+    "static/js/2.dca2b0db.chunk.js",
+    "static/js/main.f318b4f2.chunk.js"
   ]
 }
