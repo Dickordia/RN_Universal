@@ -10,6 +10,18 @@ const Link = (props: LinkProps) => {
   const navigation = useNavigation()
 
   const navigate = useCallback(() => {
+    if (props.onPress) {
+      props.onPress( () => {
+        if (props.routeName) {
+          navigation.navigate(props.routeName)
+        }
+      })
+    } else if (props.routeName) {
+      navigation.navigate(props.routeName)
+
+    } else {
+      navigation.goBack()
+    }
 
   }, [routeName])
 
@@ -17,7 +29,6 @@ const Link = (props: LinkProps) => {
     <TouchableOpacity accessibilityRole="button"
                       onPress={navigate}>
       <Text>{props.text}</Text>
-
     </TouchableOpacity>
   )
 }
