@@ -51,6 +51,6 @@
     "patch-package": "^6.2.0",
     "react-app-rewired": "^2.1.5",
     "typescript": "^3.7.4",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   }
 }
